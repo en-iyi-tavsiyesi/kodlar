@@ -182,19 +182,19 @@ $(document)['ready'](function(_0xbaafx1) {
             }
         };
         return _0xbaafx1f
-    }
+    };
 
     function _0xbaafx21(_0xbaafx22, _0xbaafx1e, _0xbaafx1f) {
         var _0xbaafx23 = _0xbaafx22[_0xbaafx1e]['title']['$t'],
             _0xbaafx24 = '<a href="' + _0xbaafx1f + '">' + _0xbaafx23 + '</a>';
         return _0xbaafx24
-    }
+    };
 
     function _0xbaafx25(_0xbaafx26, _0xbaafx1e) {
         var _0xbaafx23 = _0xbaafx26[_0xbaafx1e]['author'][0]['name']['$t'],
             _0xbaafx24 = '<span class="item-author">' + _0xbaafx23 + '</span>';
         return _0xbaafx24
-    }
+    };
 
     function _0xbaafx27(_0xbaafx22, _0xbaafx1e) {
         var _0xbaafx28 = _0xbaafx22[_0xbaafx1e]['published']['$t'];
@@ -204,7 +204,7 @@ $(document)['ready'](function(_0xbaafx1) {
             _0xbaafx2b = tyOptions['monthFormat'][parseInt(_0xbaafx7, 10)] + ' ' + _0xbaafx2a + ', ' + _0xbaafx29,
             _0xbaafx24 = '<span class="item-date">' + _0xbaafx2b + '</span>';
         return _0xbaafx24
-    }
+    };
 
     function _0xbaafx2c(_0xbaafx22, _0xbaafx1e) {
         var _0xbaafx23 = _0xbaafx22[_0xbaafx1e]['title']['$t'],
@@ -224,14 +224,14 @@ $(document)['ready'](function(_0xbaafx1) {
         };
         var _0xbaafx24 = '<img class="ty-thumb" alt="' + _0xbaafx23 + '" src="' + _0xbaafx2e + '"/>';
         return _0xbaafx24
-    }
+    };
 
     function _0xbaafx2f(_0xbaafx26, _0xbaafx1e) {
         var _0xbaafx5 = _0xbaafx26[_0xbaafx1e]['content']['$t'],
             _0xbaafx2d = _0xbaafx1('<div>')['html'](_0xbaafx5),
             _0xbaafx30 = _0xbaafx2d['text']();
         return _0xbaafx30
-    }
+    };
 
     function _0xbaafx31(_0xbaafxa, _0xbaafxd, _0xbaafx1b, _0xbaafxf) {
         var _0xbaafx32 = '';
@@ -419,7 +419,7 @@ function hitungtotaldata(root) {
     var feed = root.feed;
     var totaldata = parseInt(feed.openSearch$totalResults.$t, 10);
     loophalaman(totaldata)
-}
+};
 
 function halamanblogger() {
     var thisUrl = urlactivepage;
@@ -452,7 +452,7 @@ function halamanblogger() {
             document.write('<script src="' + home_page + 'feeds/posts/summary/-/' + lblname1 + '?alt=json-in-script&callback=hitungtotaldata&max-results=1" ><\/script>')
         }
     }
-}
+};
 
 function redirectpage(numberpage) {
     jsonstart = (numberpage - 1) * pageresults;
@@ -462,7 +462,7 @@ function redirectpage(numberpage) {
     newInclude.type = 'text/javascript';
     newInclude.setAttribute("src", home_page + "feeds/posts/summary?start-index=" + jsonstart + "&max-results=1&alt=json-in-script&callback=finddatepost");
     nBody.appendChild(newInclude)
-}
+};
 
 function redirectlabel(numberpage) {
     jsonstart = (numberpage - 1) * pageresults;
@@ -472,7 +472,7 @@ function redirectlabel(numberpage) {
     newInclude.type = 'text/javascript';
     newInclude.setAttribute("src", home_page + "feeds/posts/summary/-/" + lblname1 + "?start-index=" + jsonstart + "&max-results=1&alt=json-in-script&callback=finddatepost");
     nBody.appendChild(newInclude)
-}
+};
 
 function finddatepost(root) {
     post = root.feed.entry[0];
